@@ -1,0 +1,63 @@
+$dark: #17141A;
+$yellow: #E4D804;
+
+.services {
+    width: 100%;
+    background-color: $dark;
+    padding: 50px 0;
+
+    .services_container {
+        width: 85%;
+        margin: auto;
+        color: white;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        .download {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 65px;
+            cursor: pointer;
+            span {
+                transform: rotate(90deg);
+                color: black;
+                background-color: $yellow;
+                border-radius: 5px;
+                padding: 30px 55px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 3px;
+                font-size: 12px;
+                font-weight: 500;
+                .download_icon{
+                    margin-left: 10px;
+                    transform: rotate(-90deg);
+                    font-size: 30px;
+                }
+            }
+
+
+        }
+
+        .services_text{
+            h6{
+               position: relative;
+               font-size: 12px;
+               font-weight: 500;
+            &::before{
+               content: "";
+               position: absolute;
+               left: 0;
+               top: 8px;
+               width: 40px;
+               height: 3px;
+               background-color: $yellow;
+            } 
+            }
+            
+            
+        }
+    }
+}

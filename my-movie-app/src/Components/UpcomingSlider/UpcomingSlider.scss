@@ -1,0 +1,75 @@
+$dark: #17141A;
+$yellow: #E4D804;
+
+
+.movie_box {
+    width: 23%;
+    height: 80vh;
+    color: white;
+    // background-color: $dark;
+    img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .movie_text {
+        width: 100%;
+        margin: auto;
+
+        .movie_top_text {
+            margin: 15px 0;
+            .movie_name {
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+
+            .year {
+                font-size: 14px;
+                font-weight: 500;
+                color: $yellow;
+            }
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .movie_bottom_text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                border: 2px solid white;
+                padding: 2px 11px;
+                color: $yellow;
+                font-size: 12px;
+            }
+
+            .movie_details {
+                display: flex;
+
+                span {
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 12px;
+
+                    .duration,
+                    .like {
+                        font-size: 16px;
+                        color: $yellow;
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+        }
+    }
+}
